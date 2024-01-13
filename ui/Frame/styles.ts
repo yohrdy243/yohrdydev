@@ -1,13 +1,18 @@
 "use client";
 import styled from "styled-components";
-import { desktopBp, desktopMiniBp, laptopBp, mobileBp, tabletBp } from "../breakpoints";
+import {
+	desktopBp,
+	desktopMiniBp,
+	laptopBp,
+	mobileBp,
+	tabletBp,
+} from "../breakpoints";
 
 export const MainContainer = styled.main`
 	display: flex;
 	flex-direction: column;
 	border: 1.5px solid black;
 	border-radius: 10px;
-	color: white;
 	margin-left: auto;
 	margin-right: auto;
 	box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
@@ -21,20 +26,20 @@ export const MainContainer = styled.main`
 	@media ${laptopBp} {
 		max-width: 70rem;
 		margin-top: 0.3rem;
+		margin-bottom: 0.3rem;
 	}
-	
+
 	@media ${desktopMiniBp} {
-		max-width: 80rem;
+		max-width: 85rem;
 		margin-top: 1rem;
-		
+		margin-bottom: 1rem;
 	}
-	
+
 	@media ${desktopBp} {
 		max-width: 100rem;
 		margin-top: 2rem;
+		margin-bottom: 2rem;
 	}
-
-	
 `;
 
 export const HeaderWindow = styled.div`
@@ -52,18 +57,16 @@ export const ContentWindow = styled.div`
 	background-color: #161618;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
-	
-	@media ${mobileBp}{
+
+	@media ${mobileBp} {
 		padding: 1rem;
 	}
 
-
 	@media ${tabletBp} {
-		padding	: 1rem;
+		padding: 1rem;
 	}
 	@media ${laptopBp} {
 		padding: 2rem 2rem;
-
 	}
 
 	@media ${desktopMiniBp} {
@@ -106,4 +109,13 @@ export const NavigationButton = styled.span<{
 		transition-duration: 0.1s;
 		display: block;
 	}
+`;
+
+export const NavListContainer = styled.ul`
+	display: flex;
+	list-style: none;
+	gap: 2px;
+	margin: 0;
+	padding-right: 2rem;
+	justify-content: center;
 `;

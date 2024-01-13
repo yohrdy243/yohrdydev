@@ -3,7 +3,6 @@ import type { Metadata } from "next";
 import StyledComponentsRegistry from "@/lib/registry";
 import Frame from "@/ui/Frame";
 import { SFProDisplay } from "@/ui/fonts";
-import { BackgroundImage } from "@/ui/styles";
 
 export const metadata: Metadata = {
 	title: "Yohrdy Guevara",

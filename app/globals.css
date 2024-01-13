@@ -1,11 +1,29 @@
 html {
 	scroll-behavior: smooth;
-	color: white;
-	background-image: url("/background.webp");
+	color: rgba(255, 255, 255, 0.85);
+	background-image: url("/images/background.webp");
+	background-repeat: repeat-y;
 }
 
-body{
+body {
 	margin: 0;
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	margin: 0;
+}
+
+ol {
+	margin-block-start: 0;
+	margin-block-end: 0;
+	margin-inline-start: 0;
+	margin-inline-end: 0;
+	padding-inline-start: 0;
 }
 
 :-webkit-any-link {
