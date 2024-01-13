@@ -7,7 +7,7 @@ import {
 	FaXTwitter,
 	FaHandshakeSimple,
 } from "react-icons/fa6";
-import Image from "next/image";
+import { Image } from "./ProyectCard";
 
 const PhotoImage = styled.div`
 	display: flex;
@@ -171,7 +171,7 @@ export default function Presentation() {
 				</SocialNetworks>
 			</PresentationContainer>
 			<PhotoImage>
-				<Image src={"/photo.webp"} alt="myphoto" width={300} height={300} />
+				<Image src={"/images/photo.webp"} alt="myphoto" width={300} height={300} />
 			</PhotoImage>
 		</Container>
 	);
