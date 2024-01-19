@@ -143,7 +143,7 @@ export default function Presentation() {
 							Soy <h1>Yohrdy Guevara</h1>
 						</span>
 						<span>
-							<h2>+ 3 años de Experiencia</h2>
+							<h2>+ 2 años de Experiencia</h2>
 							como Desarrollador de Software
 						</span>
 					</NameRol>
